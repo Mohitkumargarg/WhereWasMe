@@ -16,7 +16,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".Activites.RecordMeMain"
+            android:name=".activites.RecordMeMain"
             android:screenOrientation="portrait"
             android:theme="@style/CustomActivityTheme">
             <!--<intent-filter>
@@ -46,7 +46,7 @@
             android:value="@integer/google_play_services_version" />
 
         <activity
-            android:name=".Activites.Maps"
+            android:name=".activites.Maps"
             android:label="@string/title_activity_maps">
 
             <!--
@@ -57,7 +57,7 @@
              </intent-filter>
             -->
         </activity>
-        <activity android:name=".Activites.HomeScreenMain"
+        <activity android:name=".activites.HomeScreenMain"
             android:screenOrientation="portrait"
             android:theme="@style/CustomActivityTheme">
             <intent-filter>

@@ -1,4 +1,4 @@
-package com.learning.novoinvent.wherewasme.Activites;
+package com.learning.novoinvent.wherewasme.activites;
 
 import android.app.Activity;
 import android.location.Location;

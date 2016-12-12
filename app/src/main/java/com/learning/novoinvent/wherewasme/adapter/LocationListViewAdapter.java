@@ -7,7 +7,7 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
-import com.learning.novoinvent.wherewasme.Activites.RecordMeMain;
+import com.learning.novoinvent.wherewasme.activites.RecordMeMain;
 import com.learning.novoinvent.wherewasme.R;
 import com.learning.novoinvent.wherewasme.model.LocationListModel;
 

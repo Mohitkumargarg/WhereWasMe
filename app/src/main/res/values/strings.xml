@@ -12,4 +12,6 @@
     <string name="where_was_me">Where Was Me</string>
     <string name="add_new_data">Add New Data</string>
     <string name="see_saved_data">See Saved Data</string>
+    <string name="add_new_file">Add New File</string>
+    <string name="show_stored_files">Show Stored Files</string>
 </resources>
