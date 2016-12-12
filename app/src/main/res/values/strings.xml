@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">WhereWasMe</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyAg-PFCRPY9m89QJ4LgOUvffUN6YCBiYzA</string>
+
+    <string name="app_id">358690254478521</string>
+    <string name="latitude">Latitude :</string>
+    <string name="lorem_ipsum">lorem ipsum</string>
+    <string name="longitude">Longitude :</string>
+    <string name="time_update">TimeUpdate :</string>
+    <string name="where_was_me">Where Was Me</string>
+    <string name="add_new_data">Add New Data</string>
+    <string name="see_saved_data">See Saved Data</string>
+</resources>

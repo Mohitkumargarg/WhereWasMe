@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_record_me_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.learning.novoinvent.wherewasme.Activites.RecordMeMain">
+
+    <TextView
+        android:id="@+id/header_where_i_Was"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/where_was_me"
+        android:textSize="24sp" />
+
+    <ListView
+        android:id="@+id/lvLocation"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/header_where_i_Was"
+        android:layout_centerHorizontal="true"
+        android:divider="@color/black"
+        android:dividerHeight="2px"></ListView>
+
+</RelativeLayout>
