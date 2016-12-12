@@ -28,6 +28,7 @@ public class HomeScreenMain extends Activity implements View.OnClickListener {
         llSaveNewData = (LinearLayout) findViewById(R.id.llSaveNewData);
         tvAddNewData = (TextView) findViewById(R.id.tvAddNewData);
         tvSeeSavedData = (TextView) findViewById(R.id.tvSeeSavedData);
+
         // On Start Add New Data will be selected by default
         llAddNewData.setBackgroundColor(ContextCompat.getColor(this, R.color.white));
         tvAddNewData.setTextColor(ContextCompat.getColor(this, R.color.purple));
@@ -46,6 +47,7 @@ public class HomeScreenMain extends Activity implements View.OnClickListener {
                 tvAddNewData.setTextColor(ContextCompat.getColor(this, R.color.purple));
                 llSaveNewData.setBackgroundColor(ContextCompat.getColor(this, R.color.purple));
                 tvSeeSavedData.setTextColor(ContextCompat.getColor(this, R.color.white));
+
 
                 break;
             case R.id.llSaveNewData:
