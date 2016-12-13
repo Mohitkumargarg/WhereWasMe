@@ -33,11 +33,9 @@
              sign the APK for publishing.
              You can define the keys for the debug and release targets in src/debug/ and src/release/. 
         -->
-        <!--
             <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
-        -->
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"
             android:value="@string/app_id" />
@@ -49,22 +47,20 @@
             android:name=".activites.Maps"
             android:label="@string/title_activity_maps">
 
-            <!--
-             <intent-filter>
+             <!--<intent-filter>
                  <action android:name="android.intent.action.MAIN" />
 
                  <category android:name="android.intent.category.LAUNCHER" />
-             </intent-filter>
-            -->
+             </intent-filter>-->
         </activity>
         <activity android:name=".activites.HomeScreenMain"
             android:screenOrientation="portrait"
             android:theme="@style/CustomActivityTheme">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
         </activity>
     </application>
 

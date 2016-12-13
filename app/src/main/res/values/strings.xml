@@ -9,9 +9,13 @@
     <string name="lorem_ipsum">lorem ipsum</string>
     <string name="longitude">Longitude :</string>
     <string name="time_update">TimeUpdate :</string>
-    <string name="where_was_me">Where Was Me</string>
+    <string name="where_was_i">Where Was I</string>
     <string name="add_new_data">Add New Data</string>
     <string name="see_saved_data">See Saved Data</string>
     <string name="add_new_file">Add New File</string>
     <string name="show_stored_files">Show Stored Files</string>
+    <string name="enter_the_file_name">Enter The File Name</string>
+    <string name="file_name">File Name</string>
+    <string name="submit">Submit</string>
+    <string name="cancel">Cancel</string>
 </resources>

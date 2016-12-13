@@ -11,11 +11,12 @@
         android:orientation="horizontal">
 
         <LinearLayout
+            android:id="@+id/llAddNewData"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:id="@+id/llAddNewData"
-            android:background="@color/purple">
+            android:padding="5dp"
+            android:background="@color/dark_purple">
 
             <TextView
                 android:id="@+id/tvAddNewData"
@@ -31,14 +32,15 @@
         <LinearLayout
             android:layout_width="@dimen/dp_4"
             android:layout_height="match_parent"
-            android:background="#ffffff" />
+            android:background="@color/white" />
 
         <LinearLayout
+            android:id="@+id/llSaveNewData"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:id="@+id/llSaveNewData"
-            android:background="@color/purple">
+            android:background="@color/dark_purple"
+            android:padding="5dp">
 
             <TextView
                 android:id="@+id/tvSeeSavedData"
