@@ -102,12 +102,6 @@ public class RecordMeMain extends Activity implements LocationListener {
 
     }
 
-    @Override
-    protected void onResume() {
-        super.onResume();
-
-    }
-
 
     @Override
     protected void onPause() {
@@ -135,8 +129,6 @@ public class RecordMeMain extends Activity implements LocationListener {
         locationDataModel.setTimeUpdate(DateFormat.getTimeInstance().format(new Date()));
         addLocationEntry(locationDataModel);
         updateUI();
-
-
     }
 
 

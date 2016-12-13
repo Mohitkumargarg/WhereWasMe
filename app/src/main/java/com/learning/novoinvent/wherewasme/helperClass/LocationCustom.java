@@ -24,9 +24,6 @@ public class LocationCustom {
     private LocationRequest mLocationRequest;
     private Location mLastLocation;
     private GoogleApiClient googleApiClient;
-    private String latitude;
-    private String Longitude;
-    private String timeUpdate;
 
     public GoogleApiClient setUpClient(Context context, GoogleApiClient.ConnectionCallbacks connectionCallbacks,
                                        GoogleApiClient.OnConnectionFailedListener onConnectionFailedListener) {
@@ -60,7 +57,6 @@ public class LocationCustom {
             locationDataModel.setTimeUpdate(DateFormat.getTimeInstance().format(new Date()));
 
         }
-
     }
 
     public void stopLocationUpdates(Context context) {
