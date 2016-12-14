@@ -46,9 +46,10 @@ public class LocationCustom {
 
     public void setCurrentLocation(Context context, LocationDataModel locationDataModel) {
 
-        if (ActivityCompat.checkSelfPermission(context, android.Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(context, android.Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+        if (ActivityCompat.checkSelfPermission(context, android.Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             return;
         }
+
         mLastLocation = LocationServices.FusedLocationApi.getLastLocation(googleApiClient);
 
         if (mLastLocation != null) {
@@ -57,12 +58,18 @@ public class LocationCustom {
             locationDataModel.setTimeUpdate(DateFormat.getTimeInstance().format(new Date()));
 
         }
+        else {
+            setCurrentLocation(context,locationDataModel);
+        }
     }
+
+
 
     public void stopLocationUpdates(Context context) {
         LocationServices.FusedLocationApi.removeLocationUpdates(
                 googleApiClient, (LocationListener) context);
     }
+
 
 }
 

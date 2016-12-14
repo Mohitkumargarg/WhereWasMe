@@ -8,4 +8,6 @@ public class AppConstants {
 
     public static final int LOCATION_INTERNVAL_TIME = 1000;
     public static final int LOCATION_FASTEST_INTERNVAL_TIME = 1000;
+    public static final int MY_PERMISSIONS_REQUEST_LOCATION = 100;
+
 }

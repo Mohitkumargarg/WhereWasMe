@@ -1,29 +1,20 @@
 package com.learning.novoinvent.wherewasme.activites;
 
 import android.app.Activity;
-import android.location.Location;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
 import android.widget.ListView;
-import android.widget.Toast;
 
-import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
-import com.google.android.gms.location.LocationListener;
 import com.google.android.gms.location.LocationRequest;
-import com.google.android.gms.location.LocationServices;
-import com.learning.novoinvent.wherewasme.helperClass.LocationCustom;
-import com.learning.novoinvent.wherewasme.adapter.LocationListViewAdapter;
 import com.learning.novoinvent.wherewasme.R;
+import com.learning.novoinvent.wherewasme.adapter.LocationListViewAdapter;
+import com.learning.novoinvent.wherewasme.helperClass.LocationCustom;
 import com.learning.novoinvent.wherewasme.model.LocationDataModel;
 import com.learning.novoinvent.wherewasme.model.LocationListModel;
 
-import java.text.DateFormat;
 import java.util.ArrayList;
-import java.util.Date;
 
-public class RecordMeMain extends Activity implements LocationListener {
+public class RecordMeMain extends Activity /*implements LocationListener*/ {
 
     private GoogleApiClient googleApiClient;
     private LocationRequest mLocationRequest;
@@ -41,10 +32,10 @@ public class RecordMeMain extends Activity implements LocationListener {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_record_me_main);
-        init(locationCustom);
+        //init(locationCustom);
     }
 
-    private void init(LocationCustom locationCustom) {
+   /* private void init(LocationCustom locationCustom) {
         createGoogleApiCallbacks();
         googleApiClient = locationCustom.setUpClient(this, connectionCallbacks, onConnectionFailedListener);
         mLocationRequest = locationCustom.createLocationRequest();
@@ -138,5 +129,5 @@ public class RecordMeMain extends Activity implements LocationListener {
 
     public void startLocationUpdates() {
         LocationServices.FusedLocationApi.requestLocationUpdates(googleApiClient, mLocationRequest, this);
-    }
+    }*/
 }
